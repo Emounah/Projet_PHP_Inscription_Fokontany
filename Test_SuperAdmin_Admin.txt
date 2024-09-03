@@ -1,0 +1,11 @@
+Projet Digitalisation Carnet Fokontany
+
+**TEST**
+
+**Admin(SuperAdmin)**
+pseudo   : solofoson
+Password: 12
+
+**AdminFokontany(President Fokontany)**
+CIN   : 56120
+Password: 123

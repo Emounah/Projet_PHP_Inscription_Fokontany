@@ -1,0 +1,72 @@
+footer{
+    width: 100%;
+    height: auto;
+    padding: 5% 0;
+    position: relative;
+    bottom: 0;
+    .farany{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        h1{
+            color: $colorwhite;
+            font-size: 40px;
+            @media (max-width:4000px) {
+                font-size: 100px;
+            }
+            @media (max-width:2345px) {
+                font-size: 70px;
+            }
+            @media (max-width:1537px) {
+                font-size: 40px;
+            }
+        }
+        span {
+            font-size: 60px;
+            color:$coloryellow;
+            @media (max-width:4000px) {
+                font-size: 160px;
+            }
+            @media (max-width:2345px) {
+                font-size: 130px;
+            }
+            @media (max-width:1537px) {
+                font-size: 60px;
+            }
+        }
+        p{
+            color: $colorwhite;
+            margin-bottom: 40px;
+            @media (max-width:4000px) {
+                font-size: 76px;
+            }
+            @media (max-width:2345px) {
+                font-size: 46px;
+            }
+            @media (max-width:1537px) {
+                font-size: 16px;
+            }
+        }
+        a{
+            text-decoration: none;
+            i{
+                font-size: 40px;
+                color: $coloryellow;
+                @media (max-width:4000px) {
+                    font-size: 100px;
+                }
+                @media (max-width:2345px) {
+                    font-size: 70px;
+                }
+                @media (max-width:1537px) {
+                    font-size: 40px;
+                }
+            }
+            &:hover{
+                i{
+                    color: $colorwhite;
+                }
+            }
+        }
+    }
+}

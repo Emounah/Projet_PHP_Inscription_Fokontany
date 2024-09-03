@@ -1,0 +1,258 @@
+.cc-navbar {
+    background-color: rgba(0, 0, 0, 0.55);
+    font-family: Individual;
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    z-index: 99;
+    font-size: 20px;
+    &.styck{
+        background-color: $colorblack;
+    }
+    @media (max-width : 4000px) {
+        font-size: 60px;
+        padding: 40px 0;
+    }
+    @media (max-width : 2695px) {
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    @media (max-width : 1538px) {
+        font-size: 20px;
+        padding: 10px 0;
+    }
+    .logo{
+        // position: relative;
+        color: transparent;
+        -webkit-text-stroke: .7px $coloryellow;
+        background-image:linear-gradient(360deg,red,$coloryellow,$colorwhite);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-clip: text;
+        background-position: 22.8rem 0;
+        animation: homebgtexte 6s linear infinite;
+        animation-delay: 2s;
+        // &::before{
+        //     content: "";
+        //     // @include position(absolute,0,0);
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     // @include wh(0,100%);
+        //     width: 0;
+        //     height: 100%;
+        //     border-right: 2px solid $coloryellow;
+        //     z-index: -1;
+        //     animation: homecursortext 6s linear infinite;
+        //     animation-delay: 2s;
+        //     @keyframes homecursortext {
+        //         0%,10%,100%{
+        //             width: 0;
+        //         }
+        //         65%,78%,85%{
+        //             width: 100%;
+        //             opacity: 1;
+        //         }
+        //         75%,81%{
+        //             opacity: 0;
+        //         }
+        //      }
+        // }
+        @keyframes homebgtexte {
+            0%,10%,100%{
+                background-position: -24.2rem 0;
+            }
+            65%,85%{
+                background-position: 0 0;
+            }
+         }
+        
+        @media (max-width : 4000px) {
+            font-size: 60px;
+        }
+        @media (max-width : 2695px) {
+            font-size: 40px;
+        }
+        @media (max-width : 1538px) {
+            font-size: 30px;
+        }
+        @media (max-width : 999px) {
+            font-size: 20px;
+        }
+
+    }
+    .nav-link{
+        border-bottom: 1px solid transparent;
+        transition: padding-bottom 0.4s ease-in-out, border-color 0.3s ease;
+        padding-bottom: 20px;
+        @media (max-width : 4000px) {
+            margin-right: 50px;
+            padding-bottom: 50px;
+        }
+        @media (max-width : 2695px) {
+            margin-right: 10px;
+        }
+        @media (max-width : 1538px) {
+            padding-bottom: 20px;
+            margin-right: 0;
+        }
+        &:hover{
+            padding-bottom: 20px;
+            border-bottom-color:$coloryellow ;
+        }
+        &.active{
+            border-bottom-color:$coloryellow;
+        }
+    }
+    .btn-order{
+        font-size: 20px;
+        color: $coloryellow;
+        border-color: $coloryellow;
+        transition: 0.5s;
+        border-radius: 5px!important;
+        // &:hover{
+        //     background: transparent!important;
+        // }
+        @media (max-width : 4000px) {
+            font-size: 60px;
+        }
+        @media (max-width : 2695px) {
+            font-size: 40px;
+        }
+        @media (max-width : 1538px) {
+            font-size: 20px;
+        }
+        &:hover{
+        color: $colorblack;
+        background-color: $coloryellow;
+    }
+    &.actives{
+        color: $colorblack;
+        background-color: $coloryellow;
+    }
+    }
+}
+.nav-bouton{
+    position: relative;
+    .btn-chat{
+        border: none;
+        background: none;
+        &.activechat{
+            i{
+                color: $coloryellow;
+            }
+        }
+        i{
+            color: $colorwhite;
+            font-size: 25px;
+        }
+        &:hover{
+          i{
+            color: $coloryellow;
+          }
+        }
+    }
+    .chat-discussion{
+        overflow-y: scroll;
+        opacity: 0;
+        transition: 1s;
+        padding: 20px 10px;
+        position: absolute;
+        right: 0;
+        border: .2rem solid $coloryellow;
+        width: 440px;
+        height: 500px;
+        border-radius: 0 60px 0 60px;
+        &.chat-opacite{
+           opacity: 1;
+           transition: 1s;
+        }
+        .chat1{
+            color: $colorblack;
+            display: flex;
+            flex-direction: row;
+            margin: 20px 0 ;
+            &.chat1-admin{
+                cursor: pointer;
+                &:hover p, &:hover h4{
+                    // background: $coloryellow;
+                    color: $coloryellow;
+                }
+            }
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+            }
+            .chat1-nom-discussion{
+                margin-left: 10px;
+                img{
+                    width: 90px;
+                    height: 100px;
+                    border-radius: 0;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+                .discussion{
+                    background: $colorwhite;
+                    color:$colorwhite;
+                    width: 300px;
+                    height: auto;
+                    border: .2rem solid $colorwhite;
+                    border-radius: 20px;
+                    padding: 1% 1%;
+                }
+                i{
+                    font-size: 15px;
+                }
+            }
+            &.chat2{
+                margin-left: 25px;
+            }
+    
+        }
+        .textareachat{
+            width: 100%;
+            display: inline-block;
+            position: relative;
+            textarea{
+                width: 100%;
+                resize: none;
+                height: 100px;
+               border-radius: 20px;  
+               border: none;
+               background: $colorblack;
+               color: $colorwhite;
+               padding: 2% 6%;
+               margin-top: 20px;
+            }
+            button{
+                position: absolute;
+                right: 1%;
+                top: 40%;
+                background: none;
+                border: none;
+                i{
+                    color: $colorwhite;
+                    font-size: 30px;
+                }
+                &:hover{
+                    i{
+                        color: $coloryellow;
+                    }
+                }
+            }
+            .input-photo{
+                position: absolute;
+                left: 0;
+                top: 40%;
+                label{
+                    i{
+                        &:hover{
+                           color: $coloryellow;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

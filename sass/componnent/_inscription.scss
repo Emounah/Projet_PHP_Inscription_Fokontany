@@ -1,0 +1,123 @@
+.sec2-safidy{
+    &.sec2-inscri{
+        padding: 10rem 0 4rem 0;
+        @media (max-width:4000px) {
+            padding: 18rem 0 4rem 0;
+        }
+        @media (max-width:1744px) {
+            padding: 10rem 0 4rem 0;
+        }
+    }
+    .forminscri{
+        border-radius: 20px;
+        padding: 2% 2%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        display: inline-block;
+        // border: .2rem solid $coloryellow;
+        margin: 0 auto;
+        &.form-membre,&.form-payment{
+            @media (max-width : 4000px) {
+                transform: translate(-50%);
+            }
+            @media (max-width : 2725px) {
+                transform: translate(-40%);
+            }
+            @media (max-width : 999px) {
+                transform: translate(-20%);
+            }
+        }
+        &.responsadsaz{
+            @media (max-width : 1117px) {
+                transform: translate(-30%);
+            }
+            @media (max-width :724px) {
+                transform: translate(-25%);
+            }
+            @media (max-width :684px) {
+                overflow-x: scroll;
+            }
+        }
+        // &.responsinscri{
+        //     // @media (max-width :2869px) {
+        //     //     transform: translate(-40%);
+        //     // }
+        //     // @media (max-width :2338px) {
+        //     //     transform: translate(-30%);
+        //     // }
+        //     // @media (max-width :1832px) {
+        //     //     transform: translate(-25%);
+        //     // }
+        // }
+        @media (max-width:4000px) {
+            font-size: 40px;
+        }
+        @media (max-width:1744px) {
+            font-size: 16px;
+        }
+        .row{
+            // margin: 15px 0;
+            @media (max-width:4000px) {
+                margin: 40px 0;
+            }
+            @media (max-width:1744px) {
+                margin: 15px 0;
+            }
+            &.rowid{
+                display: none;
+            }
+            .col{
+                input,.inputselect{
+                    width: 300px;
+                    // border: .2rem solid $colorblack;
+                    border-bottom: .1rem solid $colorblack;
+                    border-top: .1rem solid $colorblack;
+                    outline: none;
+                    border-left: .1rem solid transparent;
+                    border-right: .1rem solid transparent;
+                    @media (max-width:4000px) {
+                        border-bottom: .2rem solid $colorblack;
+                        border-top: .2rem solid $colorblack;
+                        width: 700px;
+                        font-size: 40px;
+                        padding: 20px 10px;
+                    }
+                    @media (max-width:1744px) {
+                        width: 300px;
+                        // border: .2rem solid $colorblack;
+                        border-bottom: .1rem solid $colorblack;
+                        border-top: .1rem solid $colorblack;
+                        font-size: 16px;
+                        padding: 10px 10px;
+
+                    }
+                }
+                .radiompTomp{
+                    width: 20px;
+                    height: 20px;
+                    @media (max-width:4000px) {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    @media (max-width:1744px) {
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                label{
+                    font-weight: bolder;
+
+                }
+            }
+        }
+        .btninscr{
+            @media (max-width:4000px) {
+                font-size: 45px;
+            }
+            @media (max-width:1744px) {
+                font-size: 16px;
+            }
+        }
+    }
+}

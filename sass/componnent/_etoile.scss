@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// .redressed{
+//     font-family: 'Redressed', cursive;
+// font-family: 'Merriweather',serif;
+// }
+@font-face {
+  font-family: betty;
+  src: url('../Public/Fontfamily/Thinking_of_Betty.ttf');
+}
+@font-face {
+  font-family: blow;
+  src: url('../Public/Fontfamily/Free\ Thinking-\'s\ Murder.ttf');
+}
+@font-face {
+  font-family: Individual;
+  src: url('../../Public/Fontfamily/Individual\ Thinking.ttf');
+}
+.merriweather{
+    border-radius: 30px 0 30px 0!important;
+    position: relative!important;
+    text-decoration: none!important;
+    border: .2rem solid $coloryellow!important;
+    padding: 1% 3%;
+    z-index: 1!important;
+    transition: .5s;
+    overflow: hidden;
+    margin: 20px!important;
+    &::before{
+      content: "";
+      // border-radius: 30px 0 30px 0!important;
+      position: absolute!important;
+      top: 0!important;
+      // background: yellow;
+      height: 100%!important;
+      z-index: -1!important;
+      transition: .5s;
+    }
+    &:nth-child(1){
+      background: transparent!important;
+      &::before{
+        left: 0;
+        background: $coloryellow;
+        width: 100%!important;
+      }
+      &:hover::before{
+          width: 0!important;
+          transition: .5s;
+      }
+      &:hover{
+        color: $colorwhite;
+      }
+    }
+    &:nth-child(2){
+      margin-right: 5rem;
+      &::before{
+        right: 0;
+        transition: .5s;
+        width: 0!important;
+
+      }
+      &:hover::before{
+        background: $coloryellow;
+        width: 100%!important;
+        transition: .5s;
+      }
+    }
+}
+body{
+  overflow-x: hidden;
+}
+.owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -4%;
+    z-index: 5;
+  }
+.owl-next {
+  color:$coloryellow;
+
+  position: absolute;
+
+  top: 40%;
+
+  right: -4%;
+
+  z-index: 5;
+
+  padding: 0;
+
+  text-align: center;
+
+}
+.owl-prev span {
+    font-size: 100px;
+    color: $coloryellow;
+    font-weight: 900;
+}
+.owl-next span {
+    font-size: 100px;
+    color: $coloryellow;
+  }
+
+
+
+

@@ -1,0 +1,294 @@
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/826133.jpg') center center fixed no-repeat;
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-height: 100vh;
+    // padding: 0 20px;
+    font-family: sans-serif;
+
+    @media (max-width : 4000px) {
+        padding: 20rem 0 0 0;
+    }
+
+    @media (max-width : 1538px) {
+        padding: 9rem 0 0 0;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        @media (max-width : 4000px) {
+            flex-wrap: nowrap;
+        }
+
+        @media (max-width : 999px) {
+            flex-wrap: wrap;
+        }
+
+        // @media (max-width : 1356px) {
+        //     flex-wrap: wrap;
+        // }
+        .sec1-banner {
+            margin: 0 22rem;
+
+            @media (max-width : 3175px) {
+                margin: 0 10rem;
+            }
+
+            @media (max-width : 1538px) {
+                margin: 0 2rem;
+            }
+        }
+
+        .colimg {
+            // border: .2rem solid $colorblack;
+            position: relative;
+            border-radius: 50%;
+            width: 20rem;
+            height: 20rem;
+            margin-top: -5rem;
+            animation: bgcolor 6s linear infinite;
+
+            // animation: rotations 6s linear infinite;
+            @media (max-width : 4000px) {
+                width: 40rem;
+                height: 40rem;
+                // left: -50%;
+            }
+
+            @media (max-width : 2594px) {
+                width: 35rem;
+                height: 35rem;
+            }
+
+            @media (max-width : 2326px) {
+                width: 30rem;
+                height: 30rem;
+                // left: -10%;
+            }
+
+            @media (max-width : 1538px) {
+                width: 20rem;
+                height: 20rem;
+                // left: 0;
+            }
+
+            @keyframes bgcolor {
+
+                0%,
+                33.33% {
+                    background: $colorwhite;
+
+                }
+
+                34%,
+                66.66% {
+                    background: red;
+                }
+
+                67%,
+                100% {
+                    background: green;
+                }
+            }
+
+            img {
+                object-fit: contain;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                animation: homebgtext 6s linear infinite;
+
+                @keyframes homebgtext {
+
+                    0%,
+                    10%,
+                    100% {
+                        transform: scale(1.5);
+                        transition: .5s;
+                    }
+
+                    65%,
+                    85% {
+                        transform: scale(0.9);
+                        transition: .5s;
+                    }
+                }
+            }
+        }
+    }
+
+    .paragraphe {
+        @media (max-width : 4000px) {
+            width: auto;
+        }
+
+        @media (max-width : 2326px) {
+            width: 50rem;
+        }
+
+        @media (max-width : 1356px) {
+            width: 30rem;
+        }
+
+        // @media (max-width : 2152px) {
+        //     width: 20rem;
+        // }
+        @media (max-width : 1382px) {
+            // width: 500px;
+            // border: .2rem solid $coloryellow;
+        }
+    }
+
+    .btnp {
+        margin-top: -5rem;
+
+        a {
+            @media (max-width : 4000px) {
+                font-size: 60px;
+            }
+
+            @media (max-width : 2695px) {
+                font-size: 40px;
+            }
+
+            @media (max-width : 1810px) {
+                font-size: 30px;
+            }
+
+            @media (max-width : 1538px) {
+                font-size: 25px;
+            }
+
+            @media (max-width : 999px) {
+                margin: 0 0;
+            }
+        }
+    }
+
+    .banner-desc {
+        font-size: 48px;
+        font-weight: 400px;
+        color: #fff;
+        // height: 10rem;
+        // border: .2rem solid $colorblack;
+        overflow: hidden;
+        transition: 20s;
+        height: 11rem;
+        @media (max-width : 4000px) {
+            height: 20rem;
+        }
+        @media (max-width : 1771px) {
+            height: 11rem;
+        }
+
+        .carrousel-2 {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+
+            .carrousel-2-child {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                animation: slide-verticale 15s linear(0 0%, 0 2.27%, 0.02 4.53%, 0.04 6.8%, 0.06 9.07%, 0.1 11.33%, 0.14 13.6%, 0.25 18.15%, 0.39 22.7%, 0.56 27.25%, 0.77 31.8%, 1 36.35%, 0.89 40.9%, 0.85 43.18%, 0.81 45.45%, 0.79 47.72%, 0.77 50%, 0.75 52.27%, 0.75 54.55%, 0.75 56.82%, 0.77 59.1%, 0.79 61.38%, 0.81 63.65%, 0.85 65.93%, 0.89 68.2%, 1 72.7%, 0.97 74.98%, 0.95 77.25%, 0.94 79.53%, 0.94 84.8%, 0.94 84.08%, 0.95 86.35%, 0.97 88.63%, 1 90.9%, 0.99 93.18%, 0.98 95.45%, 0.99 97.73%, 1 100%) infinite;
+
+                /* transition: 0.5s; */
+                .carrou-product-1 {
+                    flex-shrink: 0;
+                    width: 100%;
+                    height: 100%;
+                    color: white;
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+
+                    h1 {
+                        font-family: fangsong;
+                        letter-spacing: 6px;
+                        @media (max-width : 4000px) {
+                            font-size: 90px;
+                        }
+                        @media (max-width : 2283px) {
+                            font-size: 60px;
+                        }
+                        @media (max-width : 1771px) {
+                            font-size: 40px;
+                        }
+                        @media (max-width : 1359px) {
+                            font-size: 30px;
+                        }
+                
+                    }
+                }
+            }
+            @keyframes slide-verticale {
+                0%, 30% {
+                    transform: translateY(0);
+                }
+                31%, 60% {
+                    transform: translateY(-34%);
+                }
+                61%, 100% {
+                    transform: translateY(-63%);
+                }
+            }
+        }
+
+        @media (max-width : 4000px) {
+            font-size: 90px;
+            margin: 0 0 90px 0;
+        }
+
+        // @media (max-width : 1810px) {
+        //     font-size: 70px;
+        // }
+        // @media (max-width : 1538px) {
+        //     font-size: 48px;
+        // }
+        // @media (max-width : 2695px) {
+        //     font-size: 70px;
+        // }
+
+        @media (max-width : 2594px) {
+            font-size: 80px;
+        }
+
+        @media (max-width : 2326px) {
+            font-size: 60px;
+        }
+
+        @media (max-width : 1538px) {
+            font-size: 48px;
+        }
+
+        @media (max-width : 1356px) {
+            font-size: 30px;
+        }
+    }
+
+    .btn-order {
+        // border-color: $coloryellow;
+        color: black;
+        // background-color: $coloryellow;
+        // transition: 0.5s;
+        // &:hover{
+        //     border-color: $coloryellow;
+        //     color:$coloryellow;
+        //     background: transparent;
+        // }
+    }
+}
